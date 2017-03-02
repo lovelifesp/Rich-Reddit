@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rich Man Reddit</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Archivo+Black" rel="stylesheet">
+
+
+  <!--  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+  </head>
+  <body ng-app ="richMan" ng-controller ="ctrlView">
+
+
+
+  <div id="big">
+
+    <h1> AWW Reddit </h1>
+    <input type="text" ng-model="searchBox">Find</input>
+    <div ng-repeat = "reddit in redditInfo| filter:searchBox">
+    <h3>{{reddit.data.title |uppercase}} </h3>
+    <p> {{reddit.data.author |uppercase}} </p>
+    <img ng-src="{{reddit.data.thumbnail}}"/>
+    </div>
+    <!--<h3 ng-repeat = "reddit in redditInfo">{{reddit.data.author}}</h3> -->
+
+
+
+
+  </div>
+
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+    <script src ="JS/module/module.js"></script>
+    <script src ="JS/ctrlView.js"></script>
+
+  </body>
+</html>

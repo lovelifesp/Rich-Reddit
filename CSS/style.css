@@ -1,0 +1,37 @@
+body {
+  background-image: url("http://www.designlovefest.com/wp-content/uploads/downloads/2015/08/G-E-O-4.jpg");
+  font-family: 'Anonymous Pro', monospace;
+  text-align: center;
+}
+
+}
+h1{
+border: double 5px black;
+padding: 20px;
+text-align: center;
+font-family: 'Archivo Black', sans-serif;
+
+text-transform: capitalize;
+}
+
+h3{
+  border: double 5px black;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+img {
+  border-radius: 5px;
+  width: 40%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+img:hover {
+  border: 8px solid orange;
+}
